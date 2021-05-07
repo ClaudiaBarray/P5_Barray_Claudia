@@ -25,8 +25,32 @@
 		</nav>
 	</header>
 
-	<main>
+	<main class="basket">
+		<form>
+			<h2>Vos coordonnées</h2>
+			<!--First name-->
+			<label for="firstName">Prénom:</label>
+			<input type="text" id="firstName" name="firstName" required>
 
+			<!--Last name-->
+			<label for="lastName">Nom:</label>
+			<input type="text" id="lastName" name="lastName" required>
+			
+			<!--Email-->
+			<label for="email">Email(Ex:abcd@adresse.com):</label><br>
+			<input type="email" id="email" name="email" required>
+
+			<!--Adress-->
+			<label for="address">Adresse:</label><br>
+			<input type="text" id="address" name="address" required>
+
+			<!--City-->
+			<label for="city">Ville:</label><br>
+			<input type="text" id="city" name="city" required>
+
+			<!--Submit Button-->
+			<input id="order" type="submit" value="Commander" >
+		</form>
 
 	</main>
 
