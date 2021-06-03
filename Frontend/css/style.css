@@ -8,6 +8,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 }
+/*Page d'accueil*/
 
 header {
 	background-image: url("../images/vintage.jpg");
@@ -108,7 +109,7 @@ figcaption a{
 	background-color: rgb(0, 0, 0);
 	border-radius: 3px;
 	text-decoration: none;
-	margin-left: 70px;
+	margin-left: 100px;
 
 	
 }
@@ -119,6 +120,62 @@ figure img{
 	object-fit: cover;
 }
 
+/*Page Produit*/
+#object{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+#object img{
+	width: 50%;
+	max-height: 100%;
+	object-fit: cover;
+	
+}
+
+#description{
+	width: 70%;
+	background-color: lightgray;
+	padding: 50px 30px;
+	
+}
+
+#description label {
+	margin: 0;
+}
+
+.desc-product{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 10% 9% 0;
+}
+
+.desc-product h2{
+	margin-bottom: 20px;
+}
+
+.desc-product div{
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+	font-size: 1em;
+}
+
+button{
+	margin-top: 10%;
+	margin-left: 40%;
+	padding: 1%;
+	color: #fcf9f9;
+	background-color: black;
+	
+}
+
+select{
+	height: min-content;
+}
+/*Page panier et formulaire*/
 .basket {
 	width: 100%;
 	margin-bottom: 5%;

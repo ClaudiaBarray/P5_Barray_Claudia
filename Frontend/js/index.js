@@ -1,7 +1,7 @@
 //Url initialisation
 let url = 'http://localhost:3000/api/cameras'
 
-//Products recovery
+//Recuperation produits
 fetch(url, { method: 'GET' })
     .then(data => {
         return data.json()
@@ -15,16 +15,16 @@ fetch(url, { method: 'GET' })
 
         let myHTML = ""
 
-        //Add products
+        //Ajout de produits
         products.forEach(product => {
             console.log(product.name)
             console.log(product.price)
 
-            //Price modification
+            //Modification prix
             let originalPrice = product.price / 100
             let newPrice = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(originalPrice)
 
-            //HTML modification
+            //Création et affichage des élements HTML
             myHTML += `<figure>
 						<img src="${product.imageUrl}" alt="${product.name}">
 						<figcaption>
